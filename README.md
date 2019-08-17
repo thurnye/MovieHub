@@ -6,5 +6,7 @@ This is a movie info site where you can preview movies and watch the trailers fr
 * Movie details  
 * Trailer
 
-<img src="images/itemdisplay.png" alt="img" height="150px" weight="120px">
 
+<img src="images/search.png" alt="img" height="200px" weight="150px">
+<img src="images/searchitemy.png" alt="img" height="200px" weight="150px">
+<img src="images/itemdisplay.png" alt="img" height="100px" weight="150px">
