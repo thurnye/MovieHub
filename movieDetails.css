@@ -1,0 +1,65 @@
+.moviesOutputDetails{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    width: fit-content;
+    background-color: #1c1b1b;
+}
+
+.movieInfo{
+    padding: 5px;
+    display: flex;
+    background-color: #3f3d3d
+}
+
+.movieInfo-content{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moviedata-title{
+    display: flex;
+    justify-content: inherit;
+}
+
+.trailer{
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 43px;
+    align-self: center;
+    width: 108px;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #1ca1da;
+    margin-left: 14px;  
+}
+
+.synopsis{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 750px;
+}
+
+.otherInfo{
+    display: flex;
+    justify-content: initial;
+}
+
+.list-info{
+    border: 2px solid red;
+    display: flex;
+}
+
+.list-info2{
+   padding: 0;
+}
+
+.list{
+    list-style: none;
+    margin-bottom: 10px;
+}

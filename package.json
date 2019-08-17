@@ -1,0 +1,25 @@
+{
+  "name": "moviehut",
+  "version": "1.0.0",
+  "description": "this is a movie site for movie informations",
+  "main": "index.js movieDetails",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js",
+    "fix-all": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "  https://github.com/thurnye?tab=repositories "
+  },
+  "author": "Daniel Tamunotonye",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.10.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
