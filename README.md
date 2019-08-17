@@ -6,5 +6,5 @@ This is a movie info site where you can preview movies and watch the trailers fr
 * Movie details  
 * Trailer
 
-<img src="images/itemdisplay.png" >
+<img src="images/itemdisplay.png" alt="img">
 ![](images/itemdisplay.png)
