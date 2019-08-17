@@ -11,4 +11,4 @@ This is a movie info site where you can preview movies and watch the trailers fr
 <img src="images/itemdisplay.png" alt="img" height="200px" weight="150px">
 
 
-##https://thurnye.github.io/MovieHub/
+# https://thurnye.github.io/MovieHub/
