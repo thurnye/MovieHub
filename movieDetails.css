@@ -42,7 +42,6 @@
 
 .synopsis{
     display: flex;
-    justify-content: center;
     align-content: center;
     width: 630px;
     color: #bfbaba;
@@ -62,7 +61,7 @@
 }
 
 .otherInfo ul{
-   padding-left: 0px;
+   padding-left: 2px;
 }
 
 .list{
