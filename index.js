@@ -15,7 +15,7 @@ const clickSubmit = (e) => {
 // eslint-disable-next-line no-shadow
 let getMovies = (userSearch) => {
   // eslint-disable-next-line no-undef
-  axios.get(`http://www.omdbapi.com/?s=${userSearch}&apikey=647764b1`)
+  axios.get(`https://www.omdbapi.com/?s=${userSearch}&apikey=647764b1`)
     .then((response) => {
       // create a variable to hold the search
       const searchedMovies = response.data.Search;
