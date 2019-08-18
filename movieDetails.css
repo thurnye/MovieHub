@@ -7,8 +7,10 @@
 }
 
 .movieInfo{
+    height: fit-content;
     padding: 5px;
     display: flex;
+    align-self: center;
     background-color: #3f3d3d
 }
 
@@ -51,7 +53,6 @@
 }
 
 .list-info{
-    border: 2px solid red;
     display: flex;
 }
 
