@@ -44,12 +44,17 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 750px;
+    width: 630px;
+    color: #bfbaba;
+    font-style: italic;
+    
 }
 
 .otherInfo{
     display: flex;
-    justify-content: initial;
+    justify-content: space-between;
+    color: #dcd1d1;
+    
 }
 
 .list-info{
@@ -57,7 +62,7 @@
 }
 
 .otherInfo ul{
-   padding: 0;
+   padding-left: 0px;
 }
 
 .list{
@@ -65,11 +70,11 @@
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 516px){
     .moviesOutputDetails{
         flex-direction: column;
         margin: 40px;
-        width: auto;
+        width: fit-content;
     }
     
     .movieInfo{
@@ -89,6 +94,7 @@
     
     .moviedata-title h1{
       text-align: center;
+      color: #dedcdc;
     }
 
     .moviedata-title{
@@ -111,11 +117,13 @@
        width: fit-content;
        font-size: 10px;
        color: #bfbaba;
+       align-self: center;
     }
 
     .otherInfo{
         font-size: 10px;
         color: #dcd1d1;
+        align-self: inherit;
     }
 
     .list-info2{
