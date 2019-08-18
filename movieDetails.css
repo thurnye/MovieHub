@@ -13,6 +13,10 @@
     align-self: center;
     background-color: #3f3d3d
 }
+img {
+    width: 140px;
+    height: 260px;
+}
 
 .movieInfo-content{
     margin: 10px;
