@@ -119,12 +119,12 @@ const movieInfo = () => {
       display.appendChild(div);
       display.appendChild(mainContent);
     })
-    .catch((err) => {
+    .catch(() => {
       const error = document.createElement('div');
       error.className = 'error';
       const heading = document.createElement('h1');
       heading.className = 'error-meaasge';
-      const message = document.createTextNode(err);
+      const message = document.createTextNode('Error finding Movie');
       error.appendChild(heading).appendChild(message);
       const display = document.querySelector('.moviesOutputDetails');
       display.appendChild(error);
