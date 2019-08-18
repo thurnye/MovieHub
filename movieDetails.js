@@ -5,7 +5,7 @@
 const movieInfo = () => {
   const movieId = sessionStorage.getItem('movieId');
   // console.log(movieId);
-  axios.get(`http://www.omdbapi.com/?i=${movieId}&apikey=647764b1`)
+  axios.get(`https://www.omdbapi.com/?i=${movieId}&apikey=647764b1`)
     .then((response) => {
       const moviedata = response.data;
       // console.log(moviedata);
