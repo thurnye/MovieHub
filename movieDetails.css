@@ -13,7 +13,7 @@
     align-self: center;
     background-color: #3f3d3d
 }
-img {
+.moviedata-poster {
     width: 140px;
     height: 260px;
 }
