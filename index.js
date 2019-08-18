@@ -73,7 +73,7 @@ let getMovies = (userSearch) => {
       heading.className = 'error-meaasge';
       const message = document.createTextNode(err);
       error.appendChild(heading).appendChild(message);
-      const display = document.querySelector('.moviesOutputDetails');
+      const display = document.querySelector('.moviesOutput');
       display.appendChild(error);
     });
 };
