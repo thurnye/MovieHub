@@ -14,10 +14,6 @@ nav div h3{
 .search-container{
     background-color: #1c1b1b;
     margin:20px 50px 20px 50px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,12 +81,16 @@ img{
     text-align: center;
 }
 @media (max-width: 767px){
+    .search-container{
+    margin:20px 0px 20px 0px;
+    }
+    
     .search{
         font-size: 9px;
     }
     
     input{
-        width: 140px;
+        width: 170px;
         height: 25px;
         font-size: 16px;
     }
