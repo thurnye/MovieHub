@@ -9,13 +9,13 @@ const clickSubmit = (e) => {
   // call the get getMovies function and pass in the userInput value as an argument
   // eslint-disable-next-line no-use-before-define
   getMovies(userSearch);
-  e.preventDefault();
+  // e.preventDefault();
 };
 // create a function to get movies from an api using axios
 // eslint-disable-next-line no-shadow
 let getMovies = (userSearch) => {
   // eslint-disable-next-line no-undef
-  axios.get(`https://www.omdbapi.com/?s=${userSearch}&apikey=647764b1`)
+  axios.get(`http://www.omdbapi.com/?s=${userSearch}&apikey=647764b1`)
     .then((response) => {
       // create a variable to hold the search
       const searchedMovies = response.data.Search;
@@ -66,15 +66,15 @@ let getMovies = (userSearch) => {
         document.querySelector('.moviesOutput').appendChild(div);
       });
     })
-    .catch((err) => {
+    .catch(() => {
       const error = document.createElement('div');
       error.className = 'error';
       const heading = document.createElement('h1');
       heading.className = 'error-meaasge';
-      const message = document.createTextNode(err);
+      const message = document.createTextNode('Movie search not found. Please enter a valid search name');
       error.appendChild(heading).appendChild(message);
       const display = document.querySelector('.moviesOutput');
-      display.appendChild(error);
+      display.appendChild(message);
     });
 };
 // add event listener to the button element to listen for a click event

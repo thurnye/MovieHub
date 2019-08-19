@@ -1,4 +1,6 @@
 body{
+    display: flex;
+    flex-direction:column;
     margin: auto;
     color: white;
     background-color: black;
@@ -13,7 +15,7 @@ nav div h3{
 }
 .search-container{
     background-color: #1c1b1b;
-    margin:20px 50px 20px 50px;
+    margin: 20px 50px 20px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +34,7 @@ input{
     color: black;
 }
 
+
 .movie{
     background-color: #333334;
      margin: 10px; 
@@ -47,8 +50,9 @@ input{
   
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    margin-left: 71px;
 }
 
 img{
@@ -80,11 +84,12 @@ img{
     text-shadow: 0 0 2px rgba(0,0,0,.6);
     text-align: center;
 }
+
 @media (max-width: 767px){
     .search-container{
-    margin:20px 0px 20px 0px;
+        margin:20px 0px 20px 0px; 
     }
-    
+
     .search{
         font-size: 9px;
     }
@@ -97,6 +102,14 @@ img{
     
     .submit{
         font-size: 15px;
+    }
+    .moviesOutput{
+  
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        align-items: center;
+        margin-left: 0px;
     }
 
     .movie{
