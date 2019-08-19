@@ -1,3 +1,26 @@
+.goback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0471a0;
+    background-color: black;
+    font-size: 15px;
+    width: fit-content;
+    border-radius: 10px;
+    height: fit-content;
+    margin-left: 10px;
+   
+  }
+  .goback h1{
+    margin: 0px;
+    margin-bottom: 0px;
+  }
+  
+  span{
+      margin-top: -12px;
+  
+  }
+
 .moviesOutputDetails{
     display: flex;
     flex-direction: row;
@@ -17,7 +40,6 @@
     width: 140px;
     height: 260px;
 }
-
 .movieInfo-content{
     margin: 10px;
     display: flex;
@@ -76,10 +98,10 @@
 @media (max-width: 516px){
     .moviesOutputDetails{
         flex-direction: column;
-        margin: 40px;
+        margin: 10px;
         width: fit-content;
     }
-    
+
     .movieInfo{
         background-color: #1c1b1b;
         align-self: center;
