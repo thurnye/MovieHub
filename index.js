@@ -71,7 +71,7 @@ let getMovies = (userSearch) => {
       error.className = 'error';
       const heading = document.createElement('h1');
       heading.className = 'error-meaasge';
-      const message = document.createTextNode('Movie search not found. Please enter a valid search name');
+      const message = document.createTextNode('Movie search not found. Please enter a valid search name and try again');
       error.appendChild(heading).appendChild(message);
       const display = document.querySelector('.moviesOutput');
       display.appendChild(message);
