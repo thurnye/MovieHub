@@ -5,7 +5,7 @@
 const movieInfo = () => {
   const movieId = sessionStorage.getItem('movieId');
   // console.log(movieId);
-  axios.get(`http://www.omdbapi.com/?i=${movieId}&apikey=647764b1`)
+  axios.get(`https://www.omdbapi.com/?i=${movieId}&apikey=647764b1`)
     .then((response) => {
       const moviedata = response.data;
       // console.log(moviedata);
@@ -33,7 +33,7 @@ const movieInfo = () => {
 
       // trailer
       const trailer = document.createElement('a');
-      trailer.href = `http://imdb.com/title/${movieId}`;
+      trailer.href = `https://imdb.com/title/${movieId}`;
       trailer.target = '_blank';
       trailer.className = 'trailer';
       const trailerLink = document.createTextNode('Trailer');
