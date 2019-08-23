@@ -6,11 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MovieHut</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bar.css">
+    <link rel="stylesheet" href="movieDetails.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
+
 <body>
-    <nav>
-        <div>
+    <nav id="nav">
+        <div class="name">
             <h3>MovieHut</h3>
+        </div>
+        <div class="hamburger">
+        <input  id="input" type="checkbox">
+        
+        <span class="ham"></span>
+        <span class="ham"></span>
+        <span class="ham"></span>
+       
+        </div>
+
+        <div class="nav-bar"> 
+
+            <div class="nav-list" id="home">
+                <h3>Home</h3>
+            </div>  
+        
+            <div class="nav-list" id="genre">
+                <h3>Genre</h3>
+                <ul class="genreUl">
+                    <li>Action</li> <li>Action & Animation</li> <li>Adventure</li>
+                    <li>Animation</li> <li>Biography</li> <li>Comedy</li>
+                    <li>Crime</li> <li>Documentary</li> <li>Drama</li>
+                    <li>Family</li> <li>Fantasy</li> <li>Family</li>
+                    <li>History</li> <li>Horror</li> <li>Kids</li>
+                    <li>Music</li> <li>Mystical</li> <li>Mystery</li>
+                    <li>N/A</li> <li>News</li> <li>Reality</li>
+                    <li>Romance</li> <li>Sci-Fi</li> <li>Sci-Fi & Fantasy</li>
+                    <li>Science Fiction</li> <li>Soap</li> <li>Sport</li>
+                    <li>Talk</li> <li>Thriller</li> <li>TV Movies</li>
+                    <li>War</li> <li>War & Politics</li> <li>Western</li>
+                </ul>
+            </div>
+            <div class="nav-list" id="country">
+                <h3>Country</h3>
+                <ul>
+                    <li>Australia</li> <li>China</li> <li>France</li>
+                    <li>Hong Kong</li> <li>India</li> <li>Japan</li>
+                    <li>Canada</li> <li>Germany</li> <li>Italy</li>
+                    <li>Spain</li> <li>United Kingdom</li> <li>United State</li>  
+                </ul>
+            </div>
+            <div class="nav-list" id="tvseries"><h3>Tv-Series</h3></div>
+            <div class="nav-list" id="movies"><h3>Movies</h3></div>
+            <div class="nav-list" id="topimdb"><h3>Top IMDB</h3></div>
         </div>
     </nav>
     
@@ -28,17 +76,9 @@
     <main>
         <div class="moviesOutput"></div>
     </main>
-    
-  
-   
-  
-   
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
     integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>    
     <script src="index.js"></script>
+    <script src="navbar.js"></script>
 </body>
 </html>
