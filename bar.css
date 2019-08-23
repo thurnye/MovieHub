@@ -1,0 +1,263 @@
+nav{
+    display: flex;
+    background-color: #1c1b1b;
+}
+.name{
+    margin-left: 50px;
+    display: flex;
+    padding-right: 15px;
+    border-right: 1px solid white;
+}
+.nav-bar{
+    justify-content: space-around;
+}
+
+.nav-list{
+    position:relative;
+    display:inline-block;
+    margin:0 20px;
+    color: #3eaede;
+}
+.nav-list h3{
+    border-bottom: 2px solid rgba(0,0,0,0);
+
+}
+.nav-list h3:hover{
+    border-bottom: 2px solid white;
+    color: #8fd4f2;
+    
+}
+nav input{
+     display:none
+}
+
+.nav-list ul {
+    position:absolute;
+    top:0;left:0;
+}
+
+.nav-list ul {
+    display:none;
+    position:absolute;
+    top:40px;
+    border: 2px solid white;
+    width: 370px;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 10px;
+    
+}
+.nav-list:hover ul {
+    display:flex;
+}
+.nav-list ul li:hover{
+    background-color: #b8b7b7;
+    color: black;
+    font-weight: 13px;
+    border-radius: 7px;
+    
+}
+.nav-list ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+@media (max-width: 516px){
+       /* This is for the hamburger menu */
+       .name {
+        margin-left: 0px;
+        display: flex;
+        padding-right: 0px;
+        border-right: none;
+        justify-content: flex-start;
+
+    }
+
+   .name h3{
+       margin-top: 10px;
+   }
+
+    nav
+    {
+        display: block;
+        position: relative;
+        left: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+   }   
+   
+    div.hamburger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .ham{
+        margin-right: 26px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end; 
+    }
+
+    .burger{
+        margin-bottom: 10px;
+    }
+
+    nav input{
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: 13px;
+        margin-right:0px;
+        padding-right: 100px;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2; 
+        -webkit-touch-callout: none;
+    }
+
+    nav span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 0px;
+        background: #cdcdcd;
+        border-radius: 3px;
+        margin-right: 5px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    nav span:first-child{
+        transform-origin: 0% 0%;
+    }
+
+    nav span:nth-last-child(2){
+        transform-origin: 0% 100%;
+        margin-left: 0px;
+    }
+
+        /* Transform all the slices of hamburger into a crossmark.*/
+    nav input:checked ~ span{
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #b8b7b7;
+    }
+
+        /* But let's hide the middle one. */
+
+    nav input:checked ~ span:nth-last-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+        
+    nav input:checked ~ span:nth-last-child(2){
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: -webkit-fill-available;
+        height: max-content;
+        margin: 0px 0 0 -50px;
+        padding: 20px;
+        padding-top: 0px;
+        background: #1c1b1b;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); 
+    }
+
+    .nav-bar {
+        display:none;
+    }
+
+    .nav-bar.-open- {
+        display:block;
+    }
+
+     .nav-bar .nav-list h3
+    {
+    padding: 10px 0;
+    font-size: 20px;
+    } 
+
+    /*
+    * And let's slide it in from the left
+    */
+    nav input:checked ~ .nav-list{
+    transform: none;
+    }
+
+    .nav-list {
+        display:block;
+    }
+
+    .nav-list h3{
+        border-bottom: 2px solid #c7c5c5;
+    }
+
+    .nav-list ul {
+        position:initial;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        width: -webkit-fill-available;
+        padding-left:0px;
+        
+        
+    }
+    .nav-list ul li {
+        padding: 10px;
+        list-style: none;
+    }
+
+    .nav-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        width: -webkit-fill-available;
+        padding-left:0px;
+    }
+
+    .nav-list ul li {
+        padding: 10px;
+        list-style: none;
+    }
+}
+
+@media (min-width: 518px) and (max-width: 828px){
+
+    /* .nav-list h3 {
+        font-size: inherit;
+    }
+
+    .nav-list ul li {
+        font-size:0.9rem;
+    }
+
+    .nav-list ul{
+        width: 1278%;
+        height: 253%;
+        left: -242%;
+        padding-right: 0px;
+    } */
+
+}
+
+@media (min-width: 518px){
+
+    /* .nav-list h3 {
+        font-size: inherit;
+    } */
+
+}
+
+/*  MAKE CSS NAV STYLE FOR WIDTH MAX= 828PX AND MIN = 517 */

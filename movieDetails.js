@@ -8,6 +8,7 @@ const movieInfo = () => {
   axios.get(`https://www.omdbapi.com/?i=${movieId}&apikey=647764b1`)
     .then((response) => {
       const moviedata = response.data;
+     
       // console.log(moviedata);
       // in this case you dont have to do a loop because its not an array
 
