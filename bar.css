@@ -45,6 +45,7 @@ nav input{
     flex-wrap: wrap;
     padding-left: 0px;
     padding-right: 10px;
+    background-color: #252525;
     
 }
 .nav-list:hover ul {
